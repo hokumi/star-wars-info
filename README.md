@@ -4,4 +4,5 @@ Prototype website made for testing the use of APIs and promises and its integrat
 
 
 Data provided by [**SWAPI**](https://swapi.co/).
+
 Web Development course powered by [Andre Neagoie](https://github.com/aneagoie) on [Udemy](https://www.udemy.com/).
