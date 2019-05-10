@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/svg" href="https://cdn.freebiesupply.com/logos/large/2x/star-wars-logo-png-transparent.png"/>
+    <link rel="stylesheet" href="style.css">
+    <title>SWI - Star Wars Info</title>
+</head>
+<body>
+<div id="header">
+    <div id="header-box">
+        <h1 id="title">star wars info</h1>
+        <p id="description" class="text">This is a test website built for testing the use of APIs and using the data from <a href="https://swapi.co/" target="_blank">SWAPI</a></p>
+    </div>
+</div>
+<div id="body">
+    <div id="navbar">
+        <a href="javascript:void(0)" id="people" onclick="people.getUrl();">People</a>
+        <a href="javascript:void(0)" id="planets" onclick="planets.getUrl();">Planets</a>
+        <a href="javascript:void(0)" id="films" onclick="films.getUrl();">Films</a>
+        <a href="javascript:void(0)" id="species" onclick="species.getUrl();">Species</a>
+        <a href="javascript:void(0)" id="vehicles" onclick="vehicles.getUrl();">Vehicles</a>
+        <a href="javascript:void(0)" id="starships" onclick="starships.getUrl();">Starships</a>
+    </div>
+    <div id="initial">Click on something in the navbar to request the info from the API.</div>
+    <div id="content-box">
+    </div>
+</div>
+<div id="footer"><p>designed by <a href="https://github.com/hokumi" target="_blank">Hokumi</a></p></div>
+<script type="text/javascript" src="script.js"></script>
+<noscript class="error-msg">Sorry, your browser does not support JavaScript!</noscript>
+</body>
+</html>

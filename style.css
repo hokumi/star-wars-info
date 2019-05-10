@@ -1,0 +1,249 @@
+@font-face {
+    font-family: StarWarsFont;
+    src: url(sw.ttf)
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+:root {
+    --sw-yellow: #FFD700;
+    --txt-color: #202020;
+    --pink: #FF3C5C;
+    --black: #0A0000;
+    --green: #17A694;
+    --txt-color-white: #fafafa;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--black); 
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #202020; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--sw-yellow); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+::selection {
+    background-color: #FFD700;
+    color: #0A0000;
+}
+
+::-moz-selection{
+    background-color: #FFD700;
+    color: #0A0000;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--txt-color);
+    background-color: var(--black);
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--sw-yellow);
+    transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+}
+
+a:hover {
+    color: var(--txt-color-white);
+    transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+}
+
+#header {
+    height: 100vh;
+    background-image: url('stars-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: var(--txt-color-white);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#header-box {
+    background: #0a0000a1;
+    width: 100%;
+    height: 100%;
+}
+
+#title {
+    font-family: 'StarWarsFont', Arial, 'Times New Roman', sans-serif;
+    color: var(--sw-yellow);
+    font-size: 4.5em;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow:
+    6px 3px 0 #202020,
+  -2px -2px 0 #202020,  
+   2px -2px 0 #202020,
+   -2px 2px 0 #202020,
+    2px 2px 0 #202020;
+    padding-top: 40vh;
+}
+
+#body {
+    min-height: 500px;
+}
+
+#navbar {
+    width: fit-content;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px 15px;
+    border-radius: 8px;
+}
+
+
+#navbar a {
+    background-color: #202020;
+    display: inline-block;
+    margin: -2px;
+    padding: 15px 20px;
+}
+
+#navbar a:hover {
+    background-color: var(--sw-yellow);
+    color: #202020;
+
+}
+
+#navbar a:first-child {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#navbar a:last-child {
+    border-radius: 0px 10px 10px 0px;
+}
+
+#initial {
+    margin: auto;
+    width: 50vw;
+    color: #c7c7c7;
+    background-color: #202020;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--txt-color-white);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#content-box {
+    width: 96vw;
+    padding: 20px;
+    padding-right: 50px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #202020;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#load {
+    text-align: center;
+    width: 100%;
+    color: var(--sw-yellow);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.loader {
+    display: inline-block;
+    border: 5px solid #202020; 
+    border-top: 5px solid #FFD700;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.cards {
+    margin: 10px;
+    margin-top: 20px;
+    min-width: 200px;
+    background-color: #161616;
+    border-radius: 5px;
+    padding: 20px 10px;
+    color: var(--txt-color-white);
+    line-height: 23px;
+    text-transform: capitalize;
+    transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+}
+
+.cards:hover p {
+    color: #FFD700;
+}
+
+.cards h2 {
+    margin: 0;
+    font-size: 1.05em;
+    font-weight: bold;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+
+.cards p {
+    margin: 0;
+    margin-bottom: 8px;
+    color: #c7c7c7;
+    border-bottom: 1px white dotted;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    color: var(--txt-color-white);
+    text-align: center;
+    user-select: none;
+    background-color: var(--txt-color);
+    height: 120px;
+    padding-top: 100px;
+}
+
+.error-msg {
+    margin: auto;
+    background-color: #0A0000;
+    font-family: 'StarWarsFont', sans-serif;
+    color: var(--sw-yellow);
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
