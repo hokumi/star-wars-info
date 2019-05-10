@@ -1,6 +1,6 @@
 @font-face {
     font-family: StarWarsFont;
-    src: url(sw.ttf)
+    src: url(sw.TTF)
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
